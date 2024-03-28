@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to declare variable</title>
+</head>
+<body>
+    <!-- var a = 9999999999999;
+    console.log(a);
+    var b = 999999999999999n;
+    var c = BigInt("999999999999999");
+    console.log(c); 
+                       -->
+
+    <script>
+
+        // DataTypes in Javascript
+        // 1.Number
+        // 2.String
+        // 3.Boolean
+        // 4.Undefined
+        // 5.Null
+        // 6.object
+        // 7.BigInt
+        // 8.Symbol
+
+
+        // var - global variable
+        // let - local variable or block scope variable
+        // const - constant variable
+
+        var a = 10;
+        var b = 10;
+        var c = 10;
+
+        var d = `${a+b+c}ARC`;
+        console.log("sum of a+b+C= "+ d);
+
+        // How to initialise the String
+        var s1= "Ramesh";
+        var s2= 'jagtap'
+        var s3= `FullStack Developer`;
+        console.log(s1);
+        console.log(s2);
+        console.log(s3);
+        console.log(s1+s2+s3);
+
+        // Undefined
+        var s = undefined;
+        console.log(s);
+
+
+        //object in JS
+
+        var info={
+            Name:"Ramesh",
+            Age:24,
+            Location:"Pune",
+            Course:"Fullstack Dev"
+        }
+        console.log(info.Name);
+        console.log(info.Course);
+        console.log(info.Location);
+
+        var Course = {
+            Time:"2 To 4",
+            content:"Javascript",
+            Teacher:"Sairaj Sir"
+        }
+        console.log(Course.Time);
+        console.log(Course.content);
+        console.log(Course.Teacher);
+
+        var sym1 = Symbol("$") ;
+        console.log(sym1); 
+    </script>
+</body>
+</html>
