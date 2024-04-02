@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="firstdiv"></div>
+   
+    <script>
+
+     let b = document.getElementById("firstdiv");
+
+    let num1 = parseInt(prompt("Enter first num"));
+    let a = prompt("Enter action ");
+    let num2 = parseInt(prompt("Enter second num"));
+    
+        
+    switch(a){
+        case "+":b.innerHTML=num1 + num2;
+        break;
+        case "-":b.innerHTML=num1 - num2;
+        break;
+        case "*":b.innerHTML=num1 * num2;
+        break;
+        case "/":b.innerHTML=num1 / num2;
+        break;
+        case "**":b.innerHTML=num1 ** num2;
+        break;
+        case "%":b.innerHTML=num1 % num2;
+        break;
+        default:b.innerHTML="Enter Valid Properties";
+    }
+
+
+
+    </script>
+
+
+</body>
+</html>

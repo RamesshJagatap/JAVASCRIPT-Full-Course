@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="firstdiv"></div>
+
+    <script>
+
+let divele = document.getElementById("firstdiv");
+        
+let a=1;
+let b=2;
+let finalInnerHTML=``;
+while(a<=10){
+    finalInnerHTML+=`<H1>${a*b}</H2>`;
+        a++;
+}
+divele.innerHTML=finalInnerHTML
+    </script>
+</body>
+</html>

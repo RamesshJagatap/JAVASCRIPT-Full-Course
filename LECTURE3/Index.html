@@ -6,19 +6,33 @@
     <title>Document</title>
 </head>
 <body>
+
+    <div id="firstdiv"></div>
     <script>
 
         // var age=22;
         // Basic prompt example
-        let age = prompt("Please enter Age:");
-        console.log("You Age is : " + age);
+        // let age = prompt("Please enter Age:");
+        // console.log("You Age is : " + age);
+
+        // if(age>=18){
+        //     console.log("eligible for vote");
+        // }
+        // else{
+        //     console.log("not eligible for vote");
+        // }
+
+        let age =10;
+        
+       let b= document.getElementById("firstdiv");
 
         if(age>=18){
-            console.log("eligible for vote");
+            b.innerHTML=" Eligible for vote";
         }
         else{
-            console.log("not eligible for vote");
+            b.innerHTML="Not eligible for vote";
         }
+
     </script>
 </body>
 </html>
