@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY LECTURE</title>
+</head>
+
+<body>
+    <script>
+
+        var arr = [10, "ARR", 30, 40, 50, 100]
+        console.log(arr[4]);
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+        console.log(arr.length);
+        console.log(arr);
+
+        for(let i = arr.length; i>=0;i--){
+            console.log(arr[i]);
+        }
+
+
+        // Push to Add in Last
+        arr.push("Ramesh");
+        console.log(arr);
+
+        // Pop to delete in last
+        arr.pop();
+        console.log(arr);
+
+        // Unshift to Add in First
+        arr.unshift("Ramesh");
+        console.log(arr);
+
+        // Shift to delete First
+        arr.shift();
+        console.log(arr);
+
+        // Slice To Create new Slice array
+         let slice = arr.slice(0,3);
+        console.log(slice);
+
+
+        // Splice to Add in between
+        let arr2 = [ 1, 2, 5];
+        console.log(arr2);
+        arr2.splice(2,0, 3,4 );
+        console.log(arr2);
+
+    </script>
+</body>
+
+</html>
