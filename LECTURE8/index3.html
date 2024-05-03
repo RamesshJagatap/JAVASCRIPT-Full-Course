@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Static  -->
+    <div class="demo"></div>
+    <input type="text"><input type="button" value="post" onclick="setHTML()">
+
+    <script>
+         function setHTML(){
+
+      
+        let divele= document.getElementsByClassName('demo')[0];
+         divele.innerHTML="After clicking ";
+
+        
+     }
+    let divele = document.getElementsByClassName('demo')[0];
+    divele.setAttribute("id","JSid");
+    divele.innerHTML=4;
+
+
+    </script>
+</body>
+</html>

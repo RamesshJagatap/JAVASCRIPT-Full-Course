@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <input type="text" id="commenttext"><button onclick="AddComment()">Post</button>
+    <ul><li >
+       rada<button>Like</button><span>0</span>
+    </li></ul>
+    <script>
+
+        function AddComment(){
+           let commenttext= document.getElementById('commenttext');
+          let comment= document.createElement('li');
+          comment.innerHTML=commenttext.value;
+         let list = document.getElementsByTagName('ul')[0];
+         list.append(comment);
+         let likebutton = document.createElement('input');
+         likebutton.type="button";
+         likebutton.value="Like";
+         likebutton.addEventListener("click", function increaselikecount(){
+            let count = parseInt(likecount.innerHTML);
+            count++;
+            likecount.innerHTML=count;
+         })
+         comment.append(likebutton);
+         let likecount = document.createElement('span');
+         likecount.innerHTML=0;
+         comment.append(likecount);
+
+        }
+
+
+    </script>
+</body>
+</html>

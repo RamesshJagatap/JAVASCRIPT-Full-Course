@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <section>
+            <nav>
+                <p>
+                    <span>
+                        this is span
+                    </span>
+                </p>
+            </nav>
+        </section>
+    </div>
+</body>
+<script>
+
+    let body = document.getElementsByTagName('body')[0];
+    let section = body.firstElementChild.firstElementChild.firstElementChild.firstElementChild.firstElementChild;
+    console.log(section);
+    console.log(body.firstChild);
+    console.log(body.lastChild);
+    section.setAttribute("style","background-color:red");
+    const ramesh={
+        name:"ramesh",
+        height:5.5,
+        course:"developer",
+        city:"pune",
+        salary: function sal(){
+        }
+    };
+    console.log(ramesh);
+    
+</script>
+</html>

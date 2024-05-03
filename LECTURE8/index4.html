@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="demo"></div>
+    <input type="text"><input type="button" value="post" >
+
+    <script>
+
+function setHTML(){
+
+      
+let demodiv= document.getElementsByClassName('demo')[0];
+demodiv.innerHTML="After clicking ";
+
+
+}
+demodiv.addEventListener('click' ,setHTML )
+    </script>
+</body>
+</html>

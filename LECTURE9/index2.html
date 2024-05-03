@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body> <!-- this is comment -->
+    <div>
+        <p>this is para</p>
+    </div>
+
+    <section>this is section
+        <P id="para">paragragh</P>
+        <P></P>
+        <P></P>
+        <P></P>
+        <P></P>
+    </section>
+
+
+
+    
+</body>
+<script>
+
+    let body = document.getElementsByTagName('body')[0];
+    let a = body.firstElementChild;
+    console.log(a);
+    console.log(a.firstElementChild);
+
+    console.log(body.firstChild);
+    console.log(body.firstElementChild);
+    console.log(body.lastElementChild);
+    console.log(body.firstElementChild.nextElementSibling);
+
+    let previous = body.firstElementChild.nextElementSibling;
+     console.log( previous.previousElementSibling);
+
+     let para = document.getElementById('para');
+     console.log(para.parentNode);
+     console.log(body.lastElementChild);
+     console.log(body.childNodes[3]);
+</script>
+</html>
