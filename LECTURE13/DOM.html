@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">This is para</p>
+    <input type="submit" onclick="clicktext()">
+
+
+    <script>
+
+       var a =  document.getElementById('para');
+       var b = ["react","js","angular","html","css"]
+    //    a.innerHTML="[" + b.join[','] + "]";
+    a.innerHTML=b;
+    
+        function clicktext(){
+           b.pop();
+           a.innerHTML = "[" + b.join(' , ') + "]";
+        // a.innerHTML=b;
+        // a.innerHTML=b;
+        }
+        click();
+    </script>
+</body>
+</html>

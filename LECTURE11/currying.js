@@ -9,8 +9,8 @@ function f1(x){
 }
 console.log(f1(10));
 const first = f1(10);
-console.log(first);
+console.log(first);       //return the f2()function
 
-const second = first(10);
-const third = second(10);
+const second = first(10);  //return the f3()
+const third = second(10);  
 console.log(third);

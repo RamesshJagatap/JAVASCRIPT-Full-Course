@@ -24,3 +24,4 @@ console.log(add);
 const arrow6 = (a,b) =>(a-b)
 const sub = (40,20);
 console.log(sub);
+

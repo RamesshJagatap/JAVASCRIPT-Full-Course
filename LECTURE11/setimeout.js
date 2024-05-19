@@ -8,4 +8,4 @@ console.log("Hii");
 
 
 //synchronous - execution is line by line
-//Asynchronous - waitinig for execution a
+//Asynchronous - waitinig for execution a   

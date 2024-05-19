@@ -1,3 +1,5 @@
+
+// Example 0
 function greet(name,callback){
     console.log("Hello"+ " " + name);
     callback();
@@ -7,7 +9,7 @@ function goodbye(){
 }
 greet("ramesh",goodbye)
 
-console.log("aa");
+// Example 1
 const person= {
     name:"ramesh",
     age:33,
@@ -17,6 +19,8 @@ console.log(person);
 person.name="ganesh";
 console.log(person);
 
+
+//Example 2
 const greet1 = (name , callback) => {                 //callback = hru()
     console.log("Hello " + name);
     callback();
@@ -26,6 +30,8 @@ const hru = () =>{
 }
 greet1("Ramesh",hru);
 
+
+//Example 3
 const fullname = (fname, a, b) => {                             //a=course() and b=city()
     console.log("Hello my name is " + fname);
     a("JavaScript");                                     // pass agrument here for callback 
